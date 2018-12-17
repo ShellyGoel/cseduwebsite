@@ -1,6 +1,11 @@
 .bg-light {
   background-color: #f2f4f9 !important; }
 
+.customForm{
+  margin-bottom: 50px; 
+  background-color: #FFFFFF;
+}
+
 .pb_icon-gradient {
   background: #665fee;
   /* Old browsers */

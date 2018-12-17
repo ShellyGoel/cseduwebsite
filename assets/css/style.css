@@ -40,6 +40,10 @@
   display: block;
   position: absolute; }
 
+.customForm{
+  margin-bottom: 50px; 
+}
+
 /* Second */
 .m-1:before {
   width: 6px;
