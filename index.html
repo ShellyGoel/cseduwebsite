@@ -142,24 +142,24 @@
               <div class="col">
                 <h2>Curriculum: Coding Projects</h2>
                 <p class="pb_font-20">Our coding projects are tailored for those who are currently enrolled in AP CS. We currently have three coding projects aimed at social good. </p>
-                <p class="mb-5"><a class="btn btn-success btn-lg pb_btn-pill smoothscroll" href="https://drive.google.com/drive/u/2/folders/174m_cL6Oo3V1yKU742A6HXiOQPRxsB_h"><span class="pb_font-14 text-uppercase pb_letter-spacing-1">View A Sample Project</span></a></p>
+                <!--p class="mb-5"><a class="btn btn-success btn-lg pb_btn-pill smoothscroll" href="https://drive.google.com/drive/u/2/folders/174m_cL6Oo3V1yKU742A6HXiOQPRxsB_h"><span class="pb_font-14 text-uppercase pb_letter-spacing-1">View A Sample Project</span></a></p-->
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-lg">
                 
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="media pb_feature-v2 text-left mb-1 mt-5 clickableLink">
                   <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-bookmarks-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
+                  <div class="media-body" data-toggle="modal" data-target="#mentalModal">
                     <h3 class="mt-2 mb-2 heading">Mental Health Database</h3>
                     <p class="text-sans-serif pb_font-16">Students use object-oriented programming techniques to design and build a chat-based application that helps individuals suffering from mental health issues locate support groups.</p>
                   </div>
                 </div> 
                 
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="media pb_feature-v2 text-left mb-1 mt-5 clickableLink">
                   <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-infinite-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
+                  <div class="media-body" data-toggle="modal" data-target="#refugeeModal">
                     <h3 class="mt-2 mb-2 heading">Twitter Refugee Sentiment Analysis</h3>
                     <p class="text-sans-serif pb_font-16">Students develop a program that uses Twitter data to measure public sentiment about bullying, immigration, refugees, and more</p>
                   </div>
@@ -168,9 +168,9 @@
               </div>
               <div class="col-lg">
                 
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                <div class="media pb_feature-v2 text-left mb-1 mt-5 clickableLink">
                   <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-speedometer-outline pb_icon-gradient"></i></div>
-                  <div class="media-body">
+                  <div class="media-body" data-toggle="modal" data-target="#exampleModalCenter">
                     <h3 class="mt-2 mb-2 heading">Breast Cancer Analysis</h3>
                     <p class="text-sans-serif pb_font-16">Students build a program that analyzes and classifies real medical patient data using basic machine learning techniques.</p>
                   </div>
@@ -530,6 +530,7 @@
       </div>
     </section>
 
+
     <section class="pb_xl_py_cover overflow-hidden pb_slant-light pb_gradient_v1 cover-bg-opacity-8"  style="background-image: url(assets/images/1900x1200_img_5.jpg)" id=section-contact>
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -591,6 +592,204 @@
         </div>
       </div>
     </footer>
+
+
+    <style>
+    	.clickableDiv {
+
+    	   	color: #868e96 !important;
+    	}
+
+		.clickableLink {
+ 			 color: #868e96
+			  -o-transition:color .05s ease-out, background .5s ease-in;
+			  -ms-transition:color .05s ease-out, background .5s ease-in;
+			  -moz-transition:color .05s ease-out, background .5s ease-in;
+			  -webkit-transition:color .05s ease-out, background .5s ease-in;
+			  /* ...and now for the proper property */
+			  transition:color .05s ease-out, background .5s ease-in;
+			}
+		.clickableLink:hover { 
+			color:white; 
+			background:#f2f4f9; 
+			cursor: pointer;
+		}
+
+    </style>
+
+    <!-- Modal --> 
+    <!-- Button trigger modal -->
+    <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      Launch demo modal
+    </button-->
+
+    <!-- Modal For Breast Cancer Classification -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!--div class="modal-dialog modal-lg modal-dialog-centered" role="document"-->
+      <div class="modal-dialog modal-lg" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Breast Cancer Analysis</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          	<p>The Breast Cancer Classification project is an exciting way to introduce
+				students to how they can leverage real data to draw meaningful conclusions. The goal of the project is to implement the k-Nearest-Neighbors machine learning algorithm to classify tumors as benign or malignant. While this is an exciting new concept for most students, we aim to introduce it in an accessible and approachable way.</p>
+			  <div class="row">
+			  	
+				    <div class="col-sm-4 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/breast_cancer/breast_cancer_docs.pdf" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/document.svg" alt="Documentation">
+				    	<p class="clickableDiv">Starter Documentation</p>
+				    </a>
+
+				    </div>
+				    <div class="col-sm-4 text-center" style="background-color:lavenderblush;">
+				    	<a class=".clickableDiv" href="assets/curriculum/breast_cancer/intro_slides.pptx" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/presentation.svg" alt="Presentation">
+				    	<p class="clickableDiv">Class Presentation</p>
+				    </a>
+				    </div>
+				    <div class="col-sm-4 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/breast_cancer/BreastCancerClassify.zip" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/starter_code.svg" alt="Starter Code">
+				    	<p class="clickableDiv">Starter Code</p>
+				    </a>
+				    </div>
+			  </div>
+
+            <p class="text-center">Join our mailing list for access to starter code solutions, support from our Stanford-based team, and additional insights! </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal For Twitter Refugee -->
+    <div class="modal fade bd-example-modal-lg" id="refugeeModal" tabindex="-1" role="dialog" aria-labelledby="refugeeModal" aria-hidden="true">
+      <!--div class="modal-dialog modal-lg modal-dialog-centered" role="document"-->
+      <div class="modal-dialog modal-lg" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Twitter Refugee Sentiment Analysis</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          	<p>The Twitter Refugee Sentiment Analysis project is a relaxed project where students can explore and interact with real Twitter data. The task is to classify tweets as either having a positive or negative attitude toward refugees; a full scenario is presented in the documentation.
+			  <div class="row">
+			  	
+				    <div class="col-sm-4 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/refugee_crisis/refugee_guide.pdf" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/document.svg" alt="Documentation">
+				    	<p class="clickableDiv">Starter Documentation</p>
+				    </a>
+
+				    </div>
+				    <div class="col-sm-4 text-center" style="background-color:lavenderblush;">
+				    	<a class=".clickableDiv" href="assets/curriculum/refugee_crisis/refugee_intro_slides.pptx" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/presentation.svg" alt="Presentation">
+				    	<p class="clickableDiv">Class Presentation</p>
+				    </a>
+				    </div>
+				    <div class="col-sm-4 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/refugee_crisis/RefugeeCrisis.zip" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/starter_code.svg" alt="Starter Code">
+				    	<p class="clickableDiv">Starter Code</p>
+				    </a>
+				    </div>
+			  </div>
+
+            <p class="text-center">Join our mailing list for access to starter code solutions, support from our Stanford-based team, and additional insights! </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal For Mental Health -->
+    <div class="modal fade bd-example-modal-lg" id="mentalModal" tabindex="-1" role="dialog" aria-labelledby="refugeeModal" aria-hidden="true">
+      <!--div class="modal-dialog modal-lg modal-dialog-centered" role="document"-->
+      <div class="modal-dialog modal-lg" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mentalModal">Mental Health Project</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          	<p>The goal of this project is to create a real-world scenario where students develop an app to match people with appropriate mental health resources. This project reviews topics such as classes, objects, public vs. private methods, for-loops, indexes, substrings, parameters, and much more.</p>
+			  <div class="row">
+			  	
+				    <div class="col-sm-4 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/mental_health/mental_health_guide.pdf" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/document.svg" alt="Documentation">
+				    	<p class="clickableDiv">Starter Documentation</p>
+				    </a>
+
+				    </div>
+				    <div class="col-sm-4 text-center" style="background-color:lavenderblush;">
+				    	<a class=".clickableDiv" href="assets/curriculum/mental_health/mental_health_intro.pptx" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/presentation.svg" alt="Presentation">
+				    	<p class="clickableDiv">Class Presentation</p>
+				    </a>
+				    </div>
+				    <div class="col-sm-4 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/mental_health/MentalHealthStarter.zip" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/starter_code.svg" alt="Starter Code">
+				    	<p class="clickableDiv">Starter Code</p>
+				    </a>
+				    </div>
+			  </div>
+
+            <p class="text-center">Join our mailing list for access to starter code solutions, support from our Stanford-based team, and additional insights! </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
