@@ -204,7 +204,7 @@
                 <p class="pb_font-20">Our design thinking crash course is created for those who have no experience! Through our crash course you will learn to create projects aimed to solve pressing social needs. We also have a more in depth design thinking curriculum that can be completed in addition to the crash course!</p>
               </div>
             </div>
-            <div class="row">
+            <a class="row clickableLink2" href="assets/curriculum/DesignThinking.zip">
               <div class="col-lg">
                 
                 <div class="media pb_feature-v2 text-left mb-1 mt-5">
@@ -242,7 +242,7 @@
                   </div>
                 </div>    
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -566,6 +566,10 @@
     </section>
     <!-- END section -->
 
+
+
+
+
   
 
 
@@ -615,6 +619,21 @@
 			cursor: pointer;
 		}
 
+    .clickableLink2 {
+       color: #868e96
+        -o-transition:color .05s ease-out, background .5s ease-in;
+        -ms-transition:color .05s ease-out, background .5s ease-in;
+        -moz-transition:color .05s ease-out, background .5s ease-in;
+        -webkit-transition:color .05s ease-out, background .5s ease-in;
+        /* ...and now for the proper property */
+        transition:color .05s ease-out, background .5s ease-in;
+      }
+    .clickableLink2:hover { 
+      color:white; 
+      background:#DCDCDC; 
+      cursor: pointer;
+    }
+
     </style>
 
     <!-- Modal --> 
@@ -661,7 +680,7 @@
 				    </div>
 			  </div>
 
-            <p class="text-center">Join our mailing list for access to starter code solutions, support from our Stanford-based team, and additional insights! </p>
+            <p class="text-center">Join our mailing list for access to  support from our Stanford-based team, and <a href="assets/curriculum/breast_cancer/BreastCancerClassifySoln.zip" style="color:blue" class="clickableLink">click here</a> for the solution code.  </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -669,6 +688,40 @@
         </div>
       </div>
     </div>
+
+    <style type="text/css">
+      .inline-link{
+        color="blue"
+      }
+    </style>
+
+
+    <SCRIPT>
+      function passWord() {
+      var testV = 1;
+      var pass1 = prompt('Please enter our password for access to the coding project solutions',' ');
+      while (testV < 3) {
+      if (!pass1) 
+      history.go(-1);
+      if (pass1.toLowerCase() == "teachforgood") {
+      //alert('You Got it Right!');
+      window.open('solutionCode.html');
+      break;
+      } 
+      testV+=1;
+      var pass1 = 
+      prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+      }
+      if (pass1.toLowerCase()!="password" & testV ==3) 
+      history.go(-1);
+      return " ";
+      } 
+    </SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
 
     <!-- Modal For Twitter Refugee -->
     <div class="modal fade bd-example-modal-lg" id="refugeeModal" tabindex="-1" role="dialog" aria-labelledby="refugeeModal" aria-hidden="true">
@@ -707,7 +760,7 @@
 				    </div>
 			  </div>
 
-            <p class="text-center">Join our mailing list for access to starter code solutions, support from our Stanford-based team, and additional insights! </p>
+            <p class="text-center">Join our mailing list for access to  support from our Stanford-based team, and <a href="assets/curriculum/refugee_crisis/RefugeeCrisisSoln.zip" style="color:blue" class="clickableLink">click here</a> for the solution code.  </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -754,7 +807,7 @@
 				    </div>
 			  </div>
 
-            <p class="text-center">Join our mailing list for access to starter code solutions, support from our Stanford-based team, and additional insights! </p>
+            <p class="text-center">Join our mailing list for access to  support from our Stanford-based team, and <a href="assets/curriculum/mental_health/SolutionCode.zip" style="color:blue" class="clickableLink">click here</a> for the solution code.  </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
