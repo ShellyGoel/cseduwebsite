@@ -163,7 +163,7 @@
                     <h3 class="mt-2 mb-2 heading">Twitter Refugee Sentiment Analysis</h3>
                     <p class="text-sans-serif pb_font-16">Students develop a program that uses Twitter data to measure public sentiment about bullying, immigration, refugees, and more</p>
                   </div>
-                </div> 
+                </div>  
 
               </div>
               <div class="col-lg">
@@ -176,14 +176,15 @@
                   </div>
                 </div>
 
-                <div class="media pb_feature-v2 text-left mb-1 mt-5">
-                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-color-filter-outline  pb_icon-gradient"></i></div>
-                  <div class="media-body">
-                    <h3 class="mt-2 mb-2 heading">Coming Soon...</h3>
-                    <p class="text-sans-serif pb_font-16">This school year we plan on creating a few more tech for good coding projects! Join our mailing list for updates!</p>
+                <div class="media pb_feature-v2 text-left mb-1 mt-5 clickableLink">
+                  <div class="pb_icon d-flex mr-3 align-self-start pb_w-15"><i class="ion-ios-medkit-outline pb_icon-gradient"></i></div>
+                  <div class="media-body" data-toggle="modal" data-target="#hospitalModal">
+                    <h3 class="mt-2 mb-2 heading">Hospital Database</h3>
+                    <p class="text-sans-serif pb_font-16">Students build a model hospital database that keeps track of patient information and algorithmically diagnoses patients based on their symptoms.</p>
                   </div>
                 </div>    
               </div>
+
             </div>
           </div>
         </div>
@@ -801,6 +802,47 @@
 				    </div>
 				    <div class="col-sm-4 text-center" style="background-color:lavender;">
 				    	<a class=".clickableDiv" href="assets/curriculum/mental_health/MentalHealthStarter.zip" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/starter_code.svg" alt="Starter Code">
+				    	<p class="clickableDiv">Starter Code</p>
+				    </a>
+				    </div>
+			  </div>
+
+            <p class="text-center">Join our mailing list for access to  support from our Stanford-based team, and <a href="assets/curriculum/mental_health/SolutionCode.zip" style="color:blue" class="clickableLink">click here</a> for the solution code.  </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+ <!-- Modal For Hospital DB -->
+    <div class="modal fade bd-example-modal-lg" id="hospitalModal" tabindex="-1" role="dialog" aria-labelledby="hospitalModal" aria-hidden="true">
+      <!--div class="modal-dialog modal-lg modal-dialog-centered" role="document"-->
+      <div class="modal-dialog modal-lg" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mentalModal">Hospital Database Project</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          	<p>This is a relaxed project intended to let students review topics they have learned throughout the year in AP Computer Science, in addition to exposing them to new topics such as HashMaps, file reading, and cosine similarity. The task is to build a patient database with a HashMap that allows users to add, delete, or look up patients in the database, and implement an algorithm that can perform callculations on patient health. </p>
+			  <div class="row">
+			  	
+				    <div class="col-sm-6 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/hospital_database/HospitalProgramGuide.pdf" target="_blank">
+				    	<img class="img-fluid p-3" src="assets/images/document.svg" alt="Documentation">
+				    	<p class="clickableDiv">Starter Documentation</p>
+				    </a>
+
+				    </div>
+				    <div class="col-sm-6 text-center" style="background-color:lavender;">
+				    	<a class=".clickableDiv" href="assets/curriculum/hospital_database/HospitalProgramSoln.zip" target="_blank">
 				    	<img class="img-fluid p-3" src="assets/images/starter_code.svg" alt="Starter Code">
 				    	<p class="clickableDiv">Starter Code</p>
 				    </a>
